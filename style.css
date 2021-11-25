@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.line {
+  border-top: black solid 5px;
+}
+
+.intro {
+  display: grid;
+  grid-template:
+    "name nav" 75px
+    "blurb blurb" 100vh /
+    auto 1fr;
+  background-color: #4eb6ac;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+}
+
+span {
+  color: black;
+}
+
+h1 {
+  font-size: 100px;
+  padding-bottom: 10px;
+}
+
+.blurb p {
+  font-size: 30px;
+}
+
+.name {
+  grid-area: name;
+  padding: 10px;
+  font-size: 35px;
+  display: flex;
+  place-items: center;
+}
+
+.nav {
+  grid-area: nav;
+
+  display: grid;
+  justify-items: flex-end;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 15px 30px;
+  margin: 10px;
+  background-color: whitesmoke;
+  color: #4eb6ac;
+  border-radius: 10px;
+}
+
+nav a:hover {
+  color: white;
+  background-color: #4eb6ac;
+  border: whitesmoke solid 4px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 5px;
+  grid-auto-flow: column;
+}
+
+.blurb {
+  grid-area: blurb;
+  padding: 100px 30% 0% 30%;
+
+  display: grid;
+}
+
+.about-me,
+.experience {
+  padding: 50px 30% 60px 30%;
+}
+
+.about-me h2,
+.about-me h4,
+.about-me p,
+.about-me ul,
+.about-me li,
+.experience h2,
+.experience h4,
+.experience p,
+.portfolio-box h4,
+.portfolio-box p,
+.portfolio h2 {
+  padding: 10px;
+}
+
+.about-me ul {
+  list-style-position: inside;
+  column-count: 2;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.portfolio {
+  background-color: #ffebee;
+  display: grid;
+  grid-template:
+    "header" 50px
+    "box" auto /
+    1fr;
+  padding: 50px 10% 60px 10%;
+}
+
+.box {
+  grid-area: box;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-box {
+  display: inline-block;
+  height: auto;
+  width: 20%;
+  padding: 25px;
+  border: #ae1457 solid 7px;
+  margin: 15px;
+  background-color: whitesmoke;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #ae1457;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+.github {
+  color: #ae1457;
+  font-size: 12px;
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  height: 40px;
+  background-color: navy;
+  color: rgb(180, 155, 108);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  border-top: none;
+}
