@@ -30,19 +30,6 @@ span {
   color: black;
 }
 
-h1 {
-  font-size: 100px;
-  padding-bottom: 10px;
-}
-
-.blurb p {
-  font-size: 30px;
-}
-
-.blurb u {
-  text-decoration-color: black;
-}
-
 .name {
   grid-area: name;
   padding: 10px;
@@ -87,6 +74,20 @@ nav ul {
   grid-area: blurb;
   padding: 100px 30% 10% 30%;
 }
+
+h1 {
+  font-size: 100px;
+  padding-bottom: 10px;
+}
+
+.blurb p {
+  font-size: 30px;
+}
+
+.blurb u {
+  text-decoration-color: black;
+}
+
 
 .about-me,
 .experience {
@@ -144,20 +145,39 @@ h2 {
   display: flex;
   justify-content: center;
 }
+
 .github {
-  color: #ae1457;
   font-size: 12px;
   text-decoration: underline;
   text-align: center;
 }
+.github a {
+  color: #ae1457;
+}
 
 .footer {
   height: 40px;
-  background-color: navy;
+  background-color: #1D313A;
   color: rgb(180, 155, 108);
   font-weight: bold;
   display: flex;
   align-items: center;
-  padding-left: 5px;
+  padding-left: 10px;
   border-top: none;
+}
+
+@media screen and (max-width: 1000px)  {
+  .blurb {
+    grid-area: blurb;
+    padding: 100px 20% 10% 20%;
+  }
+  
+  h1 {
+    font-size: 90px;
+    padding-bottom: 10px;
+  }
+
+  .blurb p {
+    font-size: 25px;
+  }  
 }
