@@ -39,6 +39,10 @@ h1 {
   font-size: 30px;
 }
 
+.blurb u {
+  text-decoration-color: black;
+}
+
 .name {
   grid-area: name;
   padding: 10px;
@@ -81,27 +85,17 @@ nav ul {
 
 .blurb {
   grid-area: blurb;
-  padding: 100px 30% 0% 30%;
-
-  display: grid;
+  padding: 100px 30% 10% 30%;
 }
 
 .about-me,
 .experience {
   padding: 50px 30% 60px 30%;
 }
+/* BELOW: These had classes with their child selectors, 
+this felt more succint but less specific, which is better? */
 
-.about-me h2,
-.about-me h4,
-.about-me p,
-.about-me ul,
-.about-me li,
-.experience h2,
-.experience h4,
-.experience p,
-.portfolio-box h4,
-.portfolio-box p,
-.portfolio h2 {
+h2, h4, p, ul, li {
   padding: 10px;
 }
 
@@ -133,12 +127,13 @@ h2 {
 
 .portfolio-box {
   display: inline-block;
-  height: auto;
-  width: 20%;
+  height: 450px;
+  width: 300px;
   padding: 25px;
   border: #ae1457 solid 7px;
   margin: 15px;
   background-color: whitesmoke;
+  overflow-y: auto;
 }
 
 .button {
@@ -153,8 +148,7 @@ h2 {
   color: #ae1457;
   font-size: 12px;
   text-decoration: underline;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .footer {
